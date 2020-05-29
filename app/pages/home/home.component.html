@@ -1,0 +1,16 @@
+<div class="m-5">
+
+  <h1 >Bienvenido </h1>
+
+  <tbody>
+    <tr *ngFor="let usuario of usuarios; let i = index">
+      
+      <h3><td>{{usuario.name}}</td></h3>
+    </tr>
+  </tbody>
+
+  <button class="btn btn-outline-danger"
+          (click)="exit()">
+    Cerrar Sesión
+  </button>
+</div>
